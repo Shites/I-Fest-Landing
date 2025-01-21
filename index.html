@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I FEST #13</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+10&family=Jersey+25&family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font end -->
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./style/index.css">
+
+</head>
+
+<body>
+    <!-- Landing Page -->
+
+    <section class="">
+
+        <div class="container-hero h-max">
+
+            <!-- Start - Navbar -->
+
+            <!-- Start - Mobile -->
+            <div class="w-full h-20 lg:hidden relative">
+                <img class="" src="./asset/image/Group 330.svg" alt="">
+                <div class="h-full flex items-center font-quantico">
+                    <div class="mx-5 flex w-full items-center">
+                        <a href="/src/index.html">
+                            <div class="flex items-center space-x-5">
+                                <img src="img/element/logo.svg" alt="" class="h-6" />
+                                <span class="">IFEST #13</span>
+                            </div>
+                        </a>
+                        <div class="flex items-center lg:hidden ml-auto z-20">
+                            <button id="hamburger-btn"
+                                class="bg-white p-3 rounded-full focus:outline-none shadow-xl border border-gray-300">
+                                <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                                </svg>
+                                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6 text-black hidden" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu"
+                class="z-10 font-quantico hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300">
+                <div class="mt-16 p-5 space-y-4">
+                    <div class="text-black hover:bg-gray-200 p-2 rounded flex items-center" id="kompetisi-btn-mobile"
+                        role="button">
+                        KOMPETISI
+                        <svg id="dropdown-arrow-mobile" xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4 ml-2 transform transition-transform duration-200" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <text x="5" y="15" id="arrow-text-mobile">v</text>
+                        </svg>
+                    </div>
+                    <ul id="kompetisi-dropdown-mobile" class="hidden space-y-2 ml-5">
+                        <li>
+                            <a href="#" class="block text-black hover:bg-gray-200 p-2 rounded">Mobile UI/UX Competition
+                                (MUC)</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block text-black hover:bg-gray-200 p-2 rounded">Web Development
+                                Competition (WDC)</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block text-black hover:bg-gray-200 p-2 rounded">Capture the Flag
+                                (CTF)</a>
+                        </li>
+                    </ul>
+                    <a href="#semnas" class="block text-black hover:bg-gray-200 p-2 rounded">SEMINAR NASIONAL</a>
+                    <a href="#galeri" class="block text-black hover:bg-gray-200 p-2 rounded">GALERI</a>
+                    <a href="#partnership" class="block text-black hover:bg-gray-200 p-2 rounded">PARTNERSHIP</a>
+                </div>
+            </div>
+            <!-- End - Mobile -->
+
+            <!-- Start - Desktop -->
+            <div class="w-full h-20 hidden lg:block">
+
+                <div class="mx-auto bg-white h-full flex items-center font-quantico">
+                    <div class="mx-10 flex w-full">
+                        <a href="/src/index.html">
+                            <div class="flex items-center space-x-5">
+                                <img src="./asset/image/Logo Final (1) 1.png" alt="" class="h-6" />
+                                <span class="">IFEST #13</span>
+                            </div>
+                        </a>
+                        <div class="ml-auto flex items-center gap-16">
+                            <div class="relative">
+                                <button id="kompetisi-btn-desktop" class="focus:outline-none flex items-center">
+                                    KOMPETISI
+                                    <svg id="dropdown-arrow-desktop" xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4 ml-2 transform transition-transform duration-200" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <text x="5" y="15" id="arrow-text-desktop">v</text>
+                                    </svg>
+                                </button>
+                                <div id="kompetisi-dropdown-desktop"
+                                    class="absolute z-20 hidden bg-white shadow-lg rounded-md p-4 mt-2 left-0 w-64 border border-gray-300">
+                                    <a href="#" class="block text-black hover:bg-gray-200 p-2 rounded">Mobile UI/UX
+                                        Competition (MUC)</a>
+                                    <a href="#" class="block text-black hover:bg-gray-200 p-2 rounded">Web Development
+                                        Competition (WDC)</a>
+                                    <a href="#" class="block text-black hover:bg-gray-200 p-2 rounded">Capture the Flag
+                                        (CTF)</a>
+                                </div>
+                            </div>
+                            <a href="#semnas">SEMINAR NASIONAL</a>
+                            <a href="#galeri">GALERI</a>
+                            <a href="#partnership">PARTNERSHIP</a>
+                        </div>
+                    </div>
+                </div>
+                <img class="" src="./asset/image/Group 330.svg" alt="">
+            </div>
+            <!-- End - Desktop -->
+
+            <!-- End - Navbar -->
+
+
+            <!-- start landing hero  -->
+
+            <div class="w-full py-[10rem] pb-[10rem] lg:py-[16rem] h-full flex items-center justify-center flex-col">
+                <div class="">
+                    <div class="absolute left-0">
+                        <img class="w-[200px] lg:w-full" src="./asset/image/Vector.png" alt="">
+                    </div>
+                    <div class="absolute right-0">
+                        <img class="w-[200px] lg:w-full" src="./asset/image/Vector-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="text-hero text-center text-white">
+                    <h1 class="hero-heading lg:text-[8rem] text-[5rem]">Heroes Of Innovation</h1>
+                    <p class="hero-p lg:text-[4rem] text-[2rem] px-10 lg:px-0 ">Empowering Change in dynamic World</p>
+                </div>
+                <button class="hero-button lg:text-5xl text-2xl bg-[#4C5FDE] px-20 py-4 rounded-full">
+                    Start
+                </button>
+                <div class="">
+                    <div class="absolute left-0">
+                        <img class="w-[100px] lg:w-full" src="./asset/image/Vector-2.png" alt="">
+                    </div>
+                    <div class="absolute right-0">
+                        <img class="w-[100px] lg:w-full" src="./asset/image/Vector-3.png" alt="">
+                    </div>
+                    <div class="absolute  mt-2 left-[7rem] lg:left-[26rem]">
+                        <img class="w-[100px] lg:w-[350px]" src="./asset/image/Vector-4.png" alt="">
+                    </div>
+                    <div class="absolute mt-2 right-[7rem] lg:right-[26rem]">
+                        <img class="w-[100px] lg:w-[350px]" src="./asset/image/Vector-5.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <!-- end landing hero -->
+
+        </div>
+
+    </section>
+
+    <!-- mobile -->
+    <section class="muc pt-20 w-full h-full relative lg:hidden " id="wdc">
+        <div class="h-full w-full flex flex-col justify-center items-center">
+            <div class="px-20 pb-10 mt-20 mx-auto">
+                <img class="w-auto" src="./asset/image/MUC.png" alt="">
+            </div>
+            <h1 class="text-8xl text-textmuc-0 font-jersey">MUC</h1>
+            <p class="text-3xl text-center text-textmuc-0 font-khdam">Mobile UI/UX Competition</p>
+
+            <div class="flex flex-row px-1 mt-5 mb-5">
+                <button class="text-[0.8rem] px-2 py-2 rounded-full bg-btnmuc-0 text-white font-inter">SMA /
+                    Sederajat</button>
+                <button class="text-[0.8rem] ml-2 mr-1 px-3 py-2 rounded-full bg-btnmuc-0 text-white font-inter">Max.
+                    3 orang</button>
+                <button
+                    class="text-[0.8rem] px-4 py-2 rounded-full bg-btnmuc-0 text-white font-inter">Rp.100.000,00</button>
+            </div>
+
+            <p class="text-base text-black mt-4 px-12 font-inter text-justify">
+                Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
+                membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
+                jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
+                kebutuhan untuk memahami dan menghargai warisan budaya yang beragam. Melalui pemahaman yang
+                lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
+                merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
+            </p>
+            <div class="mt-6 flex flex-row space-x-4">
+                <button
+                    class="bg-transparent border-4  border-btnmuc-0 rounded-full text-btnmuc-0 px-4 py-2  hover:bg-btnmuc-0 hover:text-white">
+                    View all +
+                </button>
+                <button class="bg-btnmuc-0 text-white px-10 py-3 rounded-full hover:bg-white hover:text-textmuc-0">
+                    Daftar >
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="wdc w-full h-full relative lg:hidden pt-20 " id="wdc">
+        <div class="w-full h-full flex flex-col items-center justify-center">
+
+            <div class="mt-20 pb-10 mb-10 px-20 ">
+                <img class="mx-auto w-auto" src="./asset/image/WDC.png" alt="">
+            </div>
+
+            <h1 class="text-8xl text-wdctxt-0 font-jersey">WDC</h1>
+
+            <p class="text-3xl text-wdctxt-0 text-center font-khdam">Web Development Competition</p>
+
+            <div class="flex flex-row mt-5 mb-5">
+                <button class="text-[0.8rem] px-3 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">SMA /
+                    Sederajat</button>
+                <button class="text-[0.8rem] ml-2 mr-2 px-3 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">Max.
+                    3 orang</button>
+                <button
+                    class="text-[0.8rem] px-3 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">Rp.100.000,00</button>
+            </div>
+
+            <p class="text-base text-black mt-4 px-12 font-inter text-justify">
+                Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
+                membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
+                jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
+                kebutuhan untuk memahami dan menghargai warisan budaya yang beragam. Melalui pemahaman yang
+                lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
+                merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
+            </p>
+
+            <div class="mt-6 flex flex-row space-x-4">
+                <button
+                    class="bg-transparent border-4  border-wdcbtn-0 rounded-full text-wdctxt-0 px-4 py-2  hover:bg-wdcbtn-0 hover:text-white">
+                    View all +
+                </button>
+                <button class="bg-wdcbtn-0 text-white px-10 py-3 rounded-full hover:bg-white hover:text-wdcbtn-0">
+                    Daftar >
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="ctf w-full relative lg:hidden h-full">
+        <div class="w-full h-full flex flex-col pt-20 pb-10 justify-center items-center">
+            <div class="px-20 pb-10 mt-20 ">
+                <img class="mx-auto w-auto" src="./asset/image/CTF.png" alt="">
+            </div>
+
+            <h1 class="text-8xl text-ctftxt-0 font-jersey">CTF</h1>
+            <p class="text-3xl text-ctftxt-0 font-khdam">Capture The Flag</p>
+            <div class="flex flex-row mt-5 mb-5">
+                <button class="text-[0.8rem] px-3 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">SMA /
+                    Sederajat</button>
+                <button class="text-[0.8rem] ml-2 mr-2 px-3 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">Max.
+                    3 orang</button>
+                <button
+                    class="text-[0.8rem] px-3 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">Rp.100.000,00</button>
+            </div>
+            <p class="text-base text-black mt-4 px-12 font-inter text-justify">
+                Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
+                membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
+                jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
+                kebutuhan untuk memahami dan menghargai warisan budaya yang beragam. Melalui pemahaman yang
+                lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
+                merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
+            </p>
+            <div class="mt-6 flex flex-row space-x-4">
+                <button
+                    class="bg-transparent border-4  border-ctfbtn-0 rounded-full text-ctftxt-0 px-4 py-2  hover:bg-ctfbtn-0 hover:text-white">
+                    View all +
+                </button>
+                <button class="bg-ctfbtn-0 text-white px-10 py-3 rounded-full hover:bg-white hover:text-ctfbtn-0">
+                    Daftar >
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="semnas w-full h-full relative lg:hidden">
+        <div class="flex flex-col pt-20 pb-10 justify-center items-center">
+            <div class="px-20 pb-10 mt-20 ">
+                <img class="mx-auto w-auto" src="./asset/image/SEMNAS.png" alt="">
+            </div>
+            <h1 class="text-8xl text-semnascl-0  font-jersey">SEMNAS</h1>
+            <p class="text-3xl text-semnascl-0   font-khdam">Seminar Nasional</p>
+            <div class="flex-row flex mt-5 mb-5">
+                <button class="text-[0.8rem] px-3 py-2 rounded-full bg-semnascl-0 text-white font-inter">SMA /
+                    Sederajat</button>
+                <button class="text-[0.8rem] ml-2 mr-2 px-3 py-2 rounded-full bg-semnascl-0 text-white font-inter">Max.
+                    3 orang</button>
+                <button
+                    class="text-[0.8rem] px-3 py-2 rounded-full bg-semnascl-0 text-white font-inter">Rp.100.000,00</button>
+            </div>
+            <p class="text-base text-black px-12 mt-4 font-inter text-justify">
+                Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
+                membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
+                jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
+                kebutuhan untuk memahami dan menghargai warisan budaya yang beragam. Melalui pemahaman yang
+                lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
+                merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
+            </p>
+            <div class="mt-6 flex flex-row space-x-4">
+                <button
+                    class="bg-transparent border-4  border-semnascl-0 rounded-full text-semnascl-0 px-4 py-2  hover:bg-semnascl-0 hover:text-white">
+                    View all +
+                </button>
+                <button class="bg-semnascl-0 text-white px-10 py-3 rounded-full hover:bg-white hover:text-semnascl-0">
+                    Daftar >
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- desktop -->
+
+    <section class="w-full h-full py-20 muc hidden lg:block">
+        <div class="w-full h-full flex flex-row">
+            <!-- Bagian Kiri -->
+            <div class="pl-20 pr-12 mt-20 mx-auto">
+                <img class="w-auto" src="./asset/image/MUC.png" alt="">
+            </div>
+
+            <!-- Bagian Kanan -->
+            <div class="w-1/2 ml-10">
+                <h1 class="text-8xl text-textmuc-0 font-jersey">MUC</h1>
+                <p class="text-3xl text-textmuc-0 font-khdam">Mobile UI/UX Competition</p>
+                <div class="row mt-5 mb-5">
+                    <button class="text-1xl px-5 py-2 rounded-full bg-btnmuc-0 text-white font-inter">SMA /
+                        Sederajat</button>
+                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-btnmuc-0 text-white font-inter">Max.
+                        3 orang</button>
+                    <button
+                        class="text-1xl px-4 py-2 rounded-full bg-btnmuc-0 text-white font-inter">Rp.100.000,00</button>
+                </div>
+                <p class="text-lg text-black mt-4 pr-32 font-inter text-justify">
+                    Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
+                    membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
+                    jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
+                    kebutuhan untuk memahami dan menghargai warisan budaya yang beragam. Melalui pemahaman yang
+                    lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
+                    merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
+                </p>
+                <div class="mt-6 space-x-4">
+                    <button
+                        class="bg-transparent border-4  border-btnmuc-0 rounded-full text-btnmuc-0 px-10 py-2  hover:bg-btnmuc-0 hover:text-white">
+                        View all +
+                    </button>
+                    <button class="bg-btnmuc-0 text-white px-16 py-3 rounded-full hover:bg-white hover:text-textmuc-0">
+                        Daftar >
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="w-full py-20 hidden lg:block h-full wdc">
+        <div class="flex flex-row">
+            <!-- Bagian Kiri -->
+            <div class="w-1/2 ml-24">
+                <h1 class="text-8xl text-wdctxt-0 font-jersey">WDC</h1>
+                <p class="text-3xl text-wdctxt-0 font-khdam">Web Development Competition</p>
+                <div class="row mt-5 mb-5">
+                    <button class="text-1xl px-5 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">SMA /
+                        Sederajat</button>
+                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">Max.
+                        3 orang</button>
+                    <button
+                        class="text-1xl px-4 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">Rp.100.000,00</button>
+                </div>
+                <p class="text-lg text-black mt-4 pr-32 font-inter text-justify">
+                    Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
+                    membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
+                    jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
+                    kebutuhan untuk memahami dan menghargai warisan budaya yang beragam. Melalui pemahaman yang
+                    lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
+                    merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
+                </p>
+                <div class="mt-6 space-x-4">
+                    <button
+                        class="bg-transparent border-4  border-wdcbtn-0 rounded-full text-wdctxt-0 px-10 py-2  hover:bg-wdcbtn-0 hover:text-white">
+                        View all +
+                    </button>
+                    <button class="bg-wdcbtn-0 text-white px-16 py-3 rounded-full hover:bg-white hover:text-wdcbtn-0">
+                        Daftar >
+                    </button>
+                </div>
+            </div>
+            <div class="pl-20 mt-20 ">
+                <img class="mx-auto w-auto" src="./asset/image/WDC.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="w-full h-full hidden lg:block py-20 ctf">
+        <div class="flex flex-row">
+            <!-- Kanan -->
+            <div class="pl-20 mt-20 ">
+                <img class="mx-auto w-auto" src="./asset/image/CTF.png" alt="">
+            </div>
+            <!-- Bagian Kiri -->
+            <div class="w-1/2 ml-24">
+                <h1 class="text-8xl text-ctftxt-0 font-jersey">CTF</h1>
+                <p class="text-3xl text-ctftxt-0 font-khdam">Capture The Flag</p>
+                <div class="row mt-5 mb-5">
+                    <button class="text-1xl px-5 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">SMA /
+                        Sederajat</button>
+                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">Max.
+                        3 orang</button>
+                    <button
+                        class="text-1xl px-4 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">Rp.100.000,00</button>
+                </div>
+                <p class="text-lg text-black mt-4 pr-32 font-inter text-justify">
+                    Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
+                    membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
+                    jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
+                    kebutuhan untuk memahami dan menghargai warisan budaya yang beragam. Melalui pemahaman yang
+                    lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
+                    merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
+                </p>
+                <div class="mt-6 space-x-4">
+                    <button
+                        class="bg-transparent border-4  border-ctfbtn-0 rounded-full text-ctftxt-0 px-10 py-2  hover:bg-ctfbtn-0 hover:text-white">
+                        View all +
+                    </button>
+                    <button class="bg-ctfbtn-0 text-white px-16 py-3 rounded-full hover:bg-white hover:text-ctfbtn-0">
+                        Daftar >
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="semnas w-full hidden lg:block h-full py-20">
+        <div class="flex flex-row">
+            <!-- Bagian Kiri -->
+            <div class="w-1/2 ml-24">
+                <h1 class="text-8xl text-semnascl-0  font-jersey">SEMNAS</h1>
+                <p class="text-3xl text-semnascl-0   font-khdam">Seminar Nasional</p>
+                <div class="row mt-5 mb-5">
+                    <button class="text-1xl px-5 py-2 rounded-full bg-semnascl-0 text-white font-inter">SMA /
+                        Sederajat</button>
+                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-semnascl-0 text-white font-inter">Max.
+                        3 orang</button>
+                    <button
+                        class="text-1xl px-4 py-2 rounded-full bg-semnascl-0 text-white font-inter">Rp.100.000,00</button>
+                </div>
+                <p class="text-lg text-black mt-4 pr-32 font-inter text-justify">
+                    Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
+                    membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
+                    jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
+                    kebutuhan untuk memahami dan menghargai warisan budaya yang beragam. Melalui pemahaman yang
+                    lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
+                    merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
+                </p>
+                <div class="mt-6 space-x-4">
+                    <button
+                        class="bg-transparent border-4  border-semnascl-0 rounded-full text-semnascl-0 px-10 py-2  hover:bg-semnascl-0 hover:text-white">
+                        View all +
+                    </button>
+                    <button
+                        class="bg-semnascl-0 text-white px-16 py-3 rounded-full hover:bg-white hover:text-semnascl-0">
+                        Daftar >
+                    </button>
+                </div>
+            </div>
+            <div class="pl-20 mt-20 ">
+                <img class="mx-auto w-auto" src="./asset/image/SEMNAS.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsor media" id="sponsor">
+        <div class="container medspo">
+            <div class="heading-sp text-center pt-14">
+                <p class="text-md mb-8 font-khdam text-sponcl-0">I FEST#13: HEROES OF INNOVATION</p>
+                <div class="flex flex-row justify-center items-center mx-10">
+                    <div class="w-12 lg:w-20 mb-12">
+                        <img class="" src="./asset/image/bling.svg" alt="">
+                    </div>
+
+                    <h1 class="text-6xl lg:text-7xl mb-4 font-jersey text-sponcl-0 ">SPONSORS</h1>
+                    <div class="w-12 lg:w-20 mb-12">
+                        <img class="" src="./asset/image/bling.svg" alt="">
+                    </div>
+
+                </div>
+
+                <p class="text-md font-khdam text-sponcl-0 ">With the precious support of our partners</p>
+            </div>
+            <div class="flex flex-col justify-center">
+                <div class="flex flex-wrap justify-center mt-10">
+
+                    <!-- card 1 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- card 5 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <!-- sponsor end -->
+
+                <!-- media -->
+                <div class="heading-sp text-center pt-14">
+                    <div class="flex flex-row justify-center items-center mx-10">
+                        <div class="w-10 lg:w-20 mb-12">
+                            <img class="" src="./asset/image/bling.svg" alt="">
+                        </div>
+                        <h1 class="text-6xl lg:text-7xl mb-4 font-jersey text-sponcl-0 ">MEDIA PARTNER</h1>
+                        <div class="w-10 lg:w-20 mb-12">
+                            <img class="" src="./asset/image/bling.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center mt-10">
+
+                    <!-- card 1 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- card 5 -->
+                    <div class="p-1 max-w-sm">
+                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                            <img class="w-40" src="./asset/image/sponsor.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex justify-center items-center pt-5 mt-5 pb-10">
+                    <button class="rounded-full py-4 px-12 text-white bg-spbtn-0">Become our support ></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FAQ MOBILE -->
+    <section class="faq w-full h-full lg:hidden">
+        <div class="flex flex-col justify-center items-center">
+            <div class="heading-sp text-center pt-14 mb-10">
+                <p class="text-sm mb-4 font-khdam text-sponcl-0">I FEST#13: HEROES OF INNOVATION</p>
+                <div class="flex flex-row justify-center items-center mx-10">
+                    <div class="mb-12 w-10">
+                        <img class="" src="./asset/image/bling.svg" alt="">
+                    </div>
+
+                    <h1 class="text-3xl mb-4 font-jersey text-sponcl-0 ">FREQUENTLY ASKED QUESTION</h1>
+                    <div class="mb-12 w-10">
+                        <img class="" src="./asset/image/bling.svg" alt="">
+                    </div>
+                </div>
+                <p class="text-sm px-12 font-khdam text-sponcl-0 ">Here are some common question about IFEST #13</p>
+            </div>
+
+            <div class="flex justify-center flex-col items-center py-2 px-3">
+                <button onclick="toggleAccordion(1)"
+                    class="w-full  border-l-white mx-10 border-l-12 z-10 bg-faqbg-0 rounded-xl px-2 py-2 text-white">
+                    <p class="text-left text-[0.7rem] font-bold"> Bagaimana cara saya bisa menjadi peserta atau peserta
+                        dari SEMNAS
+                        di IFEST #12?</p>
+
+                </button>
+
+                <div id="content-1"
+                    class="bg-white rounded-lg relative bottom-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-7 pt-5 ml-2 px-2 text-sm text-anstxt-0">
+                        Material Tailwind allows you to quickly build modern, responsive websites with a focus on
+                        design.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center flex-col items-center py-2 px-3">
+                <button onclick="toggleAccordion(2)"
+                    class="w-full  border-l-white mx-10 border-l-12 z-10 bg-faqbg-0 rounded-xl px-2 py-2 text-white">
+                    <p class="text-left text-[0.7rem] font-bold">Apakah ada hadiah menarik untuk para pemenang kompetisi
+                        di IFEST #12?</p>
+
+                </button>
+
+                <div id="content-2"
+                    class="bg-white rounded-lg relative bottom-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-7 pt-5 ml-2 px-2 text-sm text-anstxt-0">
+                        IFEST #12 memberikan hadiah-hadiah menarik untuk para pemenang kompetisi, termasuk penghargaan
+                        uang tunai, kesempatan untuk berkolaborasi dengan perusahaan terkemuka, dan sertifikat
+                        pengakuan. Temukan lebih lanjut tentang hadiah yang dapat Anda raih dan apa manfaatnya untuk
+                        karier Anda di dunia teknologi informasi..
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center flex-col items-center py-2 px-3">
+                <button onclick="toggleAccordion(3)"
+                    class="w-full border-l-white mx-10 border-l-12 z-10 bg-faqbg-0 rounded-xl px-2 py-2 text-white">
+                    <p class="text-left text-[0.7rem] font-bold">Bagaimana jadwal acara IFEST #12?</p>
+
+                </button>
+
+                <div id="content-3"
+                    class="bg-white rounded-lg relative bottom-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-7 pt-5 ml-2 px-2 text-sm text-anstxt-0">
+                        Material Tailwind allows you to quickly build modern, responsive websites with a focus on
+                        design.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center flex-col items-center py-2 px-3">
+                <button onclick="toggleAccordion(4)"
+                    class="w-full  border-l-white mx-10 border-l-12 z-10 bg-faqbg-0 rounded-xl px-2 py-2 text-white">
+                    <p class="text-left text-[0.7rem] font-bold">Bagaimana saya bisa berkontribusi sebagai sponsor atau
+                        relawan untuk IFEST #12?</p>
+
+                </button>
+
+                <div id="content-4"
+                    class="bg-white rounded-lg relative bottom-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-7 pt-5 ml-2 px-2 text-sm text-anstxt-0">
+                        Material Tailwind allows you to quickly build modern, responsive websites with a focus on
+                        design.
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- FAQ DESKTOP -->
+    <section class="faq w-full h-full hidden lg:block" id="faq">
+        <div class=" flex flex-col justify-center items-center">
+            <div class="heading-sp text-center pt-14 mb-10">
+                <p class="text-md mb-4 font-khdam text-sponcl-0">I FEST#13: HEROES OF INNOVATION</p>
+                <div class="flex flex-row justify-center items-center">
+                    <div class="mb-12">
+                        <img class="" src="./asset/image/bling.svg" alt="">
+                    </div>
+
+                    <h1 class="text-7xl mb-4 font-jersey text-sponcl-0 ">FREQUENTLY ASKED QUESTION</h1>
+                    <div class="mb-12">
+                        <img class="" src="./asset/image/bling.svg" alt="">
+                    </div>
+
+                </div>
+                <p class="text-md font-khdam text-sponcl-0 ">Here are some common question about IFEST #13</p>
+            </div>
+
+            <!-- Accordion Item 1 -->
+
+            <div class="flex-col mb-5">
+                <button onclick="toggleAccordion(5)"
+                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg-0 rounded-xl pl-10 pr-5 py-5 text-white">
+                    <div class="btn-txt flex flex-row items-center">
+                        <p class="text-left font-bold">Bagaimana cara saya bisa menjadi peserta atau peserta dari SEMNAS
+                            di IFEST #12?</p>
+                        <span id="icon-5" class="text-white ml-80 transition-transform row-span-5 duration-300">
+                            <img class="w-7" src="./asset/image/plus.svg" alt="">
+                        </span>
+                    </div>
+
+                </button>
+
+                <div id="content-5"
+                    class="bg-white rounded-lg relative bottom-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-7 pt-5 pl-7 text-sm text-anstxt-0">
+                        Material Tailwind allows you to quickly build modern, responsive websites with a focus on
+                        design.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="flex-col mb-5">
+                <button onclick="toggleAccordion(6)"
+                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg-0 rounded-xl pl-10 pr-5 py-5 text-white">
+                    <div class="btn-txt flex flex-row items-center">
+                        <p class="text-left font-bold">Apakah ada hadiah menarik untuk para pemenang kompetisi di IFEST
+                            #12?</p>
+                        <span id="icon-6" class="text-white ml-96 transition-transform row-span-5 duration-300">
+                            <img class="w-7" src="./asset/image/plus.svg" alt="">
+                        </span>
+                    </div>
+
+                </button>
+
+                <div id="content-6"
+                    class="bg-white rounded-lg relative bottom-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-7 pt-5 pl-5 text-anstxt-0">
+                        <p class="ans">IFEST #12 memberikan hadiah-hadiah menarik untuk para pemenang kompetisi,
+                            termasuk penghargaan uang tunai, kesempatan untuk berkolaborasi dengan perusahaan terkemuka,
+                            dan sertifikat pengakuan. Temukan lebih lanjut tentang hadiah yang dapat Anda raih dan apa
+                            manfaatnya untuk karier Anda di dunia teknologi informasi.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="flex-col mb-5">
+                <button onclick="toggleAccordion(7)"
+                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg-0 rounded-xl pl-10 pr-5 py-5 text-white">
+                    <div class="btn-txt flex flex-row items-center">
+                        <p class="text-left font-bold">Bagaimana jadwal acara IFEST #12?</p>
+                        <span id="icon-7" class="text-white pl-96 ml-72 transition-transform row-span-5 duration-300">
+                            <img class="w-7" src="./asset/image/plus.svg" alt="">
+                        </span>
+                    </div>
+
+                </button>
+
+                <div id="content-7"
+                    class="bg-white rounded-lg relative bottom-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-7 pt-5 pl-7 text-sm text-anstxt-0">
+                        Material Tailwind allows you to quickly build modern, responsive websites with a focus on
+                        design.
+                    </div>
+                </div>
+            </div>
+            <!-- accordion item 4 -->
+            <div class="flex-col">
+                <button onclick="toggleAccordion(8)"
+                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg-0 rounded-xl pl-10 pr-5 py-5 text-white">
+                    <div class="btn-txt flex flex-row items-center">
+                        <p class="text-left font-bold">Bagaimana saya bisa berkontribusi sebagai sponsor atau relawan
+                            untuk IFEST #12?</p>
+                        <span id="icon-8" class="text-white ml-80 transition-transform row-span-5 duration-300">
+                            <img class="w-7" src="./asset/image/plus.svg" alt="">
+                        </span>
+                    </div>
+
+                </button>
+
+                <div id="content-8"
+                    class="bg-white rounded-lg relative bottom-2 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="pb-7 pt-5 pl-7 text-sm text-anstxt-0">
+                        Material Tailwind allows you to quickly build modern, responsive websites with a focus on
+                        design.
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center pt-5 mt-10 pb-10">
+                <p class="text-sponcl-0 font-khdam mb-5">Still Have any Question ?</p>
+                <button class="rounded-full py-4 px-12 text-white bg-spbtn-0">Contact Us></button>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <section class="contact w-full h-full py-20">
+        <div class="flex flex-col h-full w-full justify-center items-center">
+            <p class="text-sm lg:text-md mb-4 font-khdam text-sponcl-0">I FEST#13: HEROES OF INNOVATION</p>
+            <div class="flex flex-row justify-center items-center mx-10">
+                <div class="w-10 lg:w-20 mb-12">
+                    <img class="" src="./asset/image/bling.svg" alt="">
+                </div>
+
+                <h1 class="text-4xl text-center lg:text-7xl mb-6 font-jersey text-sponcl-0 ">CONTACT PERSON</h1>
+                <div class="">
+                    <img class="w-10 lg:w-20 mb-12" src="./asset/image/bling.svg" alt="">
+                </div>
+
+            </div>
+            <p class="text-sm lg:text-lg px-8 lg:px-96 lg:text-center text-center font-khdam text-sponcl-0 ">Jika Anda
+                memiliki pertanyaan lebih lanjut atau
+                membutuhkan bantuan
+                terkait IFEST #13, jangan ragu untuk menghubungi kami!</p>
+            <div class="hidden lg:block">
+                <div class="flex flex-row justify-center items-center">
+                    <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
+                        <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
+                            style="
+                                background: radial-gradient(circle, #ffe864, #d4cf4a, #1b813d);
+                                --fade-duration: 2;
+                              ">
+                            <div class="mb-5">
+                                <div class="flex gap-2 items-end justify-center text-center mb-1">
+                                    <h1 class="text-2xl text-[#00296B] text-center font-jersey25">
+                                        WDC
+                                    </h1>
+                                    <img src="./asset/image/web.png" class="w-10" alt="" />
+                                </div>
+    
+                                <h1 class="text-[#00296B] font-inter text-center text-sm">
+                                    Web Development Competition
+                                </h1>
+                            </div>
+                            <div class="mt-0">
+                                <a href="https://wa.me/+628112639082
+                                " target="_blank">
+                                    <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                        Marvela
+                                    </h1>
+                                    <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                        <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                        <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                            0811-2639-082
+                                        </h1>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-5">
+                                <a href="https://wa.me/+6287829407249
+                                " target="_blank">
+                                    <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                        Aldo
+                                    </h1>
+                                    <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                        <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                        <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                            0878-2940-7249
+                                        </h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
+                        <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
+                            style="
+                                background: radial-gradient(circle, #ffe864, #d4cf4a, #1b813d);
+                                --fade-duration: 2;
+                              ">
+                            <div class="mb-5">
+                                <div class="flex gap-2 items-end justify-center text-center mb-1">
+                                    <h1 class="text-2xl text-[#00296B] text-center font-jersey25">
+                                        WDC
+                                    </h1>
+                                    <img src="./asset/image/web.png" class="w-10" alt="" />
+                                </div>
+    
+                                <h1 class="text-[#00296B] font-inter text-center text-sm">
+                                    Web Development Competition
+                                </h1>
+                            </div>
+                            <div class="mt-0">
+                                <a href="https://wa.me/+628112639082
+                                " target="_blank">
+                                    <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                        Marvela
+                                    </h1>
+                                    <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                        <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                        <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                            0811-2639-082
+                                        </h1>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-5">
+                                <a href="https://wa.me/+6287829407249
+                                " target="_blank">
+                                    <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                        Aldo
+                                    </h1>
+                                    <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                        <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                        <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                            0878-2940-7249
+                                        </h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
+                        <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
+                            style="
+                                background: radial-gradient(circle, #ffe864, #d4cf4a, #1b813d);
+                                --fade-duration: 2;
+                              ">
+                            <div class="mb-5">
+                                <div class="flex gap-2 items-end justify-center text-center mb-1">
+                                    <h1 class="text-2xl text-[#00296B] text-center font-jersey25">
+                                        WDC
+                                    </h1>
+                                    <img src="./asset/image/web.png" class="w-10" alt="" />
+                                </div>
+    
+                                <h1 class="text-[#00296B] font-inter text-center text-sm">
+                                    Web Development Competition
+                                </h1>
+                            </div>
+                            <div class="mt-0">
+                                <a href="https://wa.me/+628112639082
+                                " target="_blank">
+                                    <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                        Marvela
+                                    </h1>
+                                    <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                        <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                        <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                            0811-2639-082
+                                        </h1>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-5">
+                                <a href="https://wa.me/+6287829407249
+                                " target="_blank">
+                                    <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                        Aldo
+                                    </h1>
+                                    <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                        <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                        <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                            0878-2940-7249
+                                        </h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
+                        <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
+                            style="
+                                background: radial-gradient(circle, #ffe864, #d4cf4a, #1b813d);
+                                --fade-duration: 2;
+                              ">
+                            <div class="mb-5">
+                                <div class="flex gap-2 items-end justify-center text-center mb-1">
+                                    <h1 class="text-2xl text-[#00296B] text-center font-jersey25">
+                                        WDC
+                                    </h1>
+                                    <img src="./asset/image/web.png" class="w-10" alt="" />
+                                </div>
+    
+                                <h1 class="text-[#00296B] font-inter text-center text-sm">
+                                    Web Development Competition
+                                </h1>
+                            </div>
+                            <div class="mt-0">
+                                <a href="https://wa.me/+628112639082
+                                " target="_blank">
+                                    <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                        Marvela
+                                    </h1>
+                                    <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                        <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                        <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                            0811-2639-082
+                                        </h1>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-5">
+                                <a href="https://wa.me/+6287829407249
+                                " target="_blank">
+                                    <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                        Aldo
+                                    </h1>
+                                    <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                        <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                        <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                            0878-2940-7249
+                                        </h1>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+                <!-- mobile -->
+
+                <div class="lg:hidden">
+                    <div class="flex flex-col justify-center items-center">
+                        <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
+                            <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
+                                style="
+                                    background: radial-gradient(circle, #ffe864, #d4cf4a, #1b813d);
+                                    --fade-duration: 2;
+                                  ">
+                                <div class="mb-5">
+                                    <div class="flex gap-2 items-end justify-center text-center mb-1">
+                                        <h1 class="text-2xl text-[#00296B] text-center font-jersey25">
+                                            WDC
+                                        </h1>
+                                        <img src="./asset/image/web.png" class="w-10" alt="" />
+                                    </div>
+        
+                                    <h1 class="text-[#00296B] font-inter text-center text-sm">
+                                        Web Development Competition
+                                    </h1>
+                                </div>
+                                <div class="mt-0">
+                                    <a href="https://wa.me/+628112639082
+                                    " target="_blank">
+                                        <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                            Marvela
+                                        </h1>
+                                        <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                            <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                            <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                                0811-2639-082
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mt-5">
+                                    <a href="https://wa.me/+6287829407249
+                                    " target="_blank">
+                                        <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                            Aldo
+                                        </h1>
+                                        <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                            <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                            <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                                0878-2940-7249
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
+                            <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
+                                style="
+                                    background: radial-gradient(circle, #ffe864, #d4cf4a, #1b813d);
+                                    --fade-duration: 2;
+                                  ">
+                                <div class="mb-5">
+                                    <div class="flex gap-2 items-end justify-center text-center mb-1">
+                                        <h1 class="text-2xl text-[#00296B] text-center font-jersey25">
+                                            WDC
+                                        </h1>
+                                        <img src="./asset/image/web.png" class="w-10" alt="" />
+                                    </div>
+        
+                                    <h1 class="text-[#00296B] font-inter text-center text-sm">
+                                        Web Development Competition
+                                    </h1>
+                                </div>
+                                <div class="mt-0">
+                                    <a href="https://wa.me/+628112639082
+                                    " target="_blank">
+                                        <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                            Marvela
+                                        </h1>
+                                        <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                            <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                            <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                                0811-2639-082
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mt-5">
+                                    <a href="https://wa.me/+6287829407249
+                                    " target="_blank">
+                                        <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                            Aldo
+                                        </h1>
+                                        <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                            <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                            <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                                0878-2940-7249
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
+                            <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
+                                style="
+                                    background: radial-gradient(circle, #ffe864, #d4cf4a, #1b813d);
+                                    --fade-duration: 2;
+                                  ">
+                                <div class="mb-5">
+                                    <div class="flex gap-2 items-end justify-center text-center mb-1">
+                                        <h1 class="text-2xl text-[#00296B] text-center font-jersey25">
+                                            WDC
+                                        </h1>
+                                        <img src="./asset/image/web.png" class="w-10" alt="" />
+                                    </div>
+        
+                                    <h1 class="text-[#00296B] font-inter text-center text-sm">
+                                        Web Development Competition
+                                    </h1>
+                                </div>
+                                <div class="mt-0">
+                                    <a href="https://wa.me/+628112639082
+                                    " target="_blank">
+                                        <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                            Marvela
+                                        </h1>
+                                        <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                            <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                            <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                                0811-2639-082
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mt-5">
+                                    <a href="https://wa.me/+6287829407249
+                                    " target="_blank">
+                                        <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                            Aldo
+                                        </h1>
+                                        <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                            <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                            <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                                0878-2940-7249
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
+                            <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
+                                style="
+                                    background: radial-gradient(circle, #ffe864, #d4cf4a, #1b813d);
+                                    --fade-duration: 2;
+                                  ">
+                                <div class="mb-5">
+                                    <div class="flex gap-2 items-end justify-center text-center mb-1">
+                                        <h1 class="text-2xl text-[#00296B] text-center font-jersey25">
+                                            WDC
+                                        </h1>
+                                        <img src="./asset/image/web.png" class="w-10" alt="" />
+                                    </div>
+        
+                                    <h1 class="text-[#00296B] font-inter text-center text-sm">
+                                        Web Development Competition
+                                    </h1>
+                                </div>
+                                <div class="mt-0">
+                                    <a href="https://wa.me/+628112639082
+                                    " target="_blank">
+                                        <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                            Marvela
+                                        </h1>
+                                        <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                            <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                            <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                                0811-2639-082
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mt-5">
+                                    <a href="https://wa.me/+6287829407249
+                                    " target="_blank">
+                                        <h1 class="text-[#00296B] font-montserrat text-center text-sm">
+                                            Aldo
+                                        </h1>
+                                        <div class="rounded-2xl bg-[#5ECC85] py-2 px-3 mt-2 flex gap-2">
+                                            <img src="./asset/image/wa.png" class="w-5" alt="" />
+                                            <h1 class="text-[#00296B] font-bold text-center text-sm">
+                                                0878-2940-7249
+                                            </h1>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+
+    <!-- Start - Footer-->
+    <section>
+        <!-- Start - Mobile -->
+
+        <div class="lg:hidden">
+            <div class="bg-[#00296B] h-auto w-auto text-white">
+                <div class="relative z-0">
+                    <div class="absolute w-36">
+                        <img src="./asset/image/garis_footer.svg" alt="" class="opacity-85" />
+                    </div>
+
+                    <div class="absolute w-36 right-0 scale-x-[-1]">
+                        <img src="./asset/image/garis_footer.svg" alt="" class="opacity-85" />
+                    </div>
+                </div>
+
+                <div class="relative z-0">
+                    <div class="px-10 pt-20 pb-10">
+                        <div>
+                            <a href="/">
+                                <img src="./asset/image/logo_footer.svg" alt="" class="w-40" />
+                                <h1 class="font-interBold mt-3 text-xl">IFest #13</h1>
+                            </a>
+                        </div>
+                        <h1 class="font-inter mt-3 max-w-sm text-sm">
+                            The premier annual IT event hosted by HIMAFORKA UAJY. Brings
+                            together technology enthusiasts for a week of innovation,
+                            competition, and collaboration.
+                        </h1>
+                        <hr class="my-5" />
+                        <div class="flex flex-col space-y-5">
+                            <div class="flex flex-col">
+                                <h1 class="font-interBold text-xl">EVENTS</h1>
+                                <div class="mt-5 hover:underline">
+                                    <a href="/semnas" class="font-inter">Seminar nasional</a>
+                                </div>
+                            </div>
+                            <hr class="my-5" />
+                            <div class="flex flex-col space-y-5">
+                                <h1 class="font-interBold text-xl">COMPETITION</h1>
+                                <div class="hover:underline">
+                                    <a href="/muc" class="font-inter">Mobile UI/UX Competition (MUC)</a>
+                                </div>
+                                <div class="hover:underline">
+                                    <a href="/wdc" class="font-inter">Web Design Competition (WDC)</a>
+                                </div>
+                                <div class="hover:underline">
+                                    <a href="/ctf" class="font-inter">Capture The Flag (CTF)</a>
+                                </div>
+                            </div>
+                            <hr class="my-5" />
+                            <div class="flex flex-col space-y-3">
+                                <h1 class="font-interBold text-xl">SOCIAL MEDIA</h1>
+                                <div class="flex gap-2">
+                                    <a href=""><img src="./asset/image/mingcute_youtube-fill.svg" alt=""
+                                            class="w-10" /></a>
+
+                                    <a href="https://www.instagram.com/ifest_uajy/"><img
+                                            src="./asset/image/mingcute_instagram-fill.svg" alt="" class="w-10" /></a>
+                                    <a href=""><img src="./asset/image/mingcute_line-app-fill.svg" alt=""
+                                            class="w-10" /></a>
+                                </div>
+                            </div>
+                            <hr class="my-5" />
+                            <div class="flex flex-col space-y-3">
+                                <h1 class="font-interBold text-xl">OUR CONTACTS</h1>
+                                <div class="mt-3 hover:underline">
+                                    <a href="/" class="font-inter">ifestuajy@gmail.com</a>
+                                </div>
+                                <h1 class="mt-2">+6212345678</h1>
+                            </div>
+                            <hr class="my-5" />
+                            <div class="text-center pt-10">
+                                <h1 class="text-white font-extrabold text-center">
+                                    © 2025 IFEST #13 UAJY. All rights reserved. <br />
+                                    Organized by WD IFEST #13
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End - Mobile -->
+
+        <!-- Start - Desktop -->
+        <div class="hidden lg:block">
+            <div class="bg-[#00296B] h-auto w-auto">
+                <div class="relative z-0">
+                    <div class="absolute w-56">
+                        <img src="./asset/image/garis_footer.svg" alt="" class="opacity-85" />
+                    </div>
+
+                    <div class="absolute w-56 right-0 scale-x-[-1]">
+                        <img src="./asset/image/garis_footer.svg" alt="" class="opacity-85" />
+                    </div>
+                </div>
+
+                <div class="relative z-10">
+                    <div class="py-10 px-20 flex w-auto">
+                        <div class="mx-auto text-white">
+                            <div>
+                                <a href="/">
+                                    <img class="w-40" src="./asset/image/logo_footer.svg.svg" alt="" />
+                                    <h1 class="font-interBold mt-3 text-xl">IFest #13</h1>
+                                </a>
+                            </div>
+
+                            <h1 class="font-inter mt-5 w-96">
+                                The premier annual IT event hosted by HIMAFORKA UAJY. Brings
+                                together technology enthusiasts for a week of innovation,
+                                competition, and collaboration.
+                            </h1>
+                            <h1 class="font-interBold mt-8 text-xl">Presented By</h1>
+                            <img src="img/element/logo_hima.svg" class="w-28 mt-5" alt="" />
+                        </div>
+                        <div class="mx-auto text-white">
+                            <h1 class="font-interBold text-xl">EVENTS</h1>
+                            <div class="mt-5 hover:underline">
+                                <a href="/semnas" class="font-inter">Seminar nasional</a>
+                            </div>
+                        </div>
+                        <div class="mx-auto text-white">
+                            <h1 class="font-interBold text-xl">COMPETITION</h1>
+                            <div class="mt-5 hover:underline">
+                                <a href="/muc" class="font-inter">Mobile UI/UX Competition <br />
+                                    (MUC)</a>
+                            </div>
+                            <div class="mt-3 hover:underline">
+                                <a href="/wdc" class="font-inter">Web Design Competition <br />
+                                    (WDC)</a>
+                            </div>
+                            <div class="mt-3 hover:underline">
+                                <a href="/ctf" class="font-inter">Capture The Flag <br />
+                                    (CTF)</a>
+                            </div>
+                        </div>
+                        <div class="mx-auto text-white">
+                            <div class="flex flex-col">
+                                <h1 class="font-interBold text-xl">SOCIAL MEDIA</h1>
+                                <div class="flex gap-2 mt-3">
+                                    <a href=""><img src="./asset/image/mingcute_youtube-fill.svg" alt=""
+                                            class="w-10" /></a>
+
+                                    <a href="https://www.instagram.com/ifest_uajy/" target="_blank"><img
+                                            src="./asset/image/mingcute_instagram-fill.svg" alt="" class="w-10" /></a>
+                                    <a href=""><img src="./asset/image/mingcute_line-app-fill.svg" alt=""
+                                            class="w-10" /></a>
+                                </div>
+                                <div class="mt-10">
+                                    <h1 class="font-interBold text-xl">OUR CONTACTS</h1>
+                                    <div class="mt-3 hover:underline">
+                                        <a href="/" class="font-inter">ifestuajy@gmail.com</a>
+                                    </div>
+                                    <h1 class="mt-2">+6212345678</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-center">
+                    <hr class="mb-5 w-96" />
+                </div>
+                <h1 class="pb-5 text-white font-extrabold text-center">
+                    © 2025 IFEST #13 UAJY. All rights reserved. | Organized by WD IFEST
+                    #13
+                </h1>
+            </div>
+        </div>
+        <!-- End - Desktop -->
+    </section>
+    <!-- End - Footer-->
+
+
+
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
