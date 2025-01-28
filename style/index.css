@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 
 body{
@@ -181,3 +179,130 @@ body{
     bottom: 0rem;
     left: 60.5rem;
 }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+.landingReveal{
+    animation: landingReveal 1s ease-in-out;
+  }
+
+.ld-rv-txt{
+    animation: ld-rv-txt 2s ease-in-out;
+}
+
+.an-cl{
+    animation: ancl-l1 1.5s ease-in-out;
+}
+.ancl-2{
+    animation: ancl-l2 1.5s ease-in-out;
+}
+
+.ancl-3{
+    animation: ancl-3 1s ease-in-out;
+}
+
+.ancl-4{
+    animation: ancl-4 1s ease-in-out;
+}
+
+.ancl-stat{
+    animation: ancl-stat 1s ease-in-out;
+}
+
+.rotate-right{
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.rotate-right.actv{
+    opacity: 1;
+    animation: rotate-img 1.8s;
+}
+
+.rotate-left{
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.rotate-left.actvi{
+    opacity: 1;
+    animation: rotate-img 1.8s;
+}
+
+@keyframes rotate-left{
+    100% {transform: rotate(-360deg);}
+}
+
+
+
+
+
+@keyframes rotate-img {
+    100% {transform: rotate(360deg);}
+  }
+
+@keyframes ancl-stat{
+    0%{
+        opacity: 0;
+        transform: translatey(30px);
+        transition: all 0.5s ease;
+      }
+}
+
+
+@keyframes ancl-l1{
+    0%{
+        opacity: 0;
+        transform: translatex(-30px);
+        transition: all 0.5s ease;
+      }
+}
+
+@keyframes ancl-l2{
+    0%{
+        opacity: 0;
+        transform: translatex(-10px);
+        transition: all 0.5s ease;
+      }
+}
+@keyframes ancl-3{
+    0%{
+        opacity: 0;
+        transform: translatex(-30px);
+        transition: all 0.5s ease;
+      }
+}
+
+@keyframes
+ancl-4{
+    0%{
+        opacity: 0;
+        transform: translatex(-10px);
+        transition: all 0.5s ease;
+      }
+}
+@keyframes ld-rv-txt{
+    0%{
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all 0.5s ease;
+      }
+}
+
+  @keyframes landingReveal{
+    0%{
+      opacity: 0;
+      transform: translateY(70px);
+      transition: all 1s ease;
+    }}
+  

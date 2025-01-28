@@ -119,4 +119,63 @@ function toggleAccordion(index) {
     }
   }
 
+  window.addEventListener('scroll', reveal);
+
+  function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
   
+    for(var i = 0; i < reveals.length; i++){
+  
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+  
+      if(revealtop < windowheight - revealpoint){
+        reveals[i].classList.add('active');
+      }
+      else{
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', rotate);
+
+  function rotate(){
+    var rotates = document.querySelectorAll('.rotate-right');
+  
+    for(var i = 0; i < rotates.length; i++){
+  
+      var windowheight = window.innerHeight;
+      var rotatetop = rotates[i].getBoundingClientRect().top;
+      var rotatepoint = 150;
+  
+      if(rotatetop < windowheight - rotatepoint){
+        rotates[i].classList.add('actv');
+      }
+      else{
+        rotates[i].classList.remove('actv');
+      }
+    }
+  }
+
+
+  window.addEventListener('scroll', rotateLeft);
+
+  function rotateLeft(){
+    var rotatesLeft = document.querySelectorAll('.rotate-left');
+  
+    for(var i = 0; i < rotatesLeft.length; i++){
+  
+      var windowheight = window.innerHeight;
+      var rotatetop = rotatesLeft[i].getBoundingClientRect().top;
+      var rotatepoint = 150;
+  
+      if(rotatetop < windowheight - rotatepoint){
+        rotatesLeft[i].classList.add('actvi');
+      }
+      else{
+        rotatesLeft[i].classList.remove('actvi');
+      }
+    }
+  }

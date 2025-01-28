@@ -90,9 +90,8 @@
             <!-- End - Mobile -->
 
             <!-- Start - Desktop -->
-            <div class="w-full h-20 hidden lg:block">
-
-                <div class="mx-auto bg-white h-full flex items-center font-quantico">
+            <div class="w-full relative z-50 h-20 hidden lg:block lg:fixed">
+                <nav class="mx-auto bg-white h-full flex items-center font-quantico">
                     <div class="mx-10 flex w-full">
                         <a href="/src/index.html">
                             <div class="flex items-center space-x-5">
@@ -126,9 +125,11 @@
                             <a href="#partnership">PARTNERSHIP</a>
                         </div>
                     </div>
-                </div>
-                <img class="" src="./asset/image/Group 330.svg" alt="">
+                </nav>
+                
             </div>
+            <img class="hidden lg:block lg:pt-20" src="./asset/image/Group 330.svg" alt="">
+        
             <!-- End - Desktop -->
 
             <!-- End - Navbar -->
@@ -136,17 +137,17 @@
 
             <!-- start landing hero  -->
 
-            <div class="w-full py-[10rem] pb-[10rem] lg:py-[16rem] h-full flex items-center justify-center flex-col">
+            <div class="w-full py-[10rem] landingReveal pb-[10rem] lg:pb-[20rem] lg:py-[8rem] h-full flex items-center justify-center flex-col">
                 <div class="">
-                    <div class="absolute left-0">
+                    <div class="absolute left-0 ancl-3">
                         <img class="w-[200px] lg:w-full" src="./asset/image/Vector.png" alt="">
                     </div>
-                    <div class="absolute right-0">
+                    <div class="absolute ancl-4 right-0">
                         <img class="w-[200px] lg:w-full" src="./asset/image/Vector-1.png" alt="">
                     </div>
                 </div>
 
-                <div class="text-hero text-center text-white">
+                <div class="text-hero ld-rv-txt text-center text-white z-20">
                     <h1 class="hero-heading lg:text-[8rem] text-[5rem]">Heroes Of Innovation</h1>
                     <p class="hero-p lg:text-[4rem] text-[2rem] px-10 lg:px-0 ">Empowering Change in dynamic World</p>
                 </div>
@@ -154,16 +155,16 @@
                     Start
                 </button>
                 <div class="">
-                    <div class="absolute left-0">
+                    <div class="absolute an-cl left-0">
                         <img class="w-[100px] lg:w-full" src="./asset/image/Vector-2.png" alt="">
                     </div>
-                    <div class="absolute right-0">
+                    <div class="absolute right-0 ancl-2">
                         <img class="w-[100px] lg:w-full" src="./asset/image/Vector-3.png" alt="">
                     </div>
-                    <div class="absolute  mt-2 left-[7rem] lg:left-[26rem]">
+                    <div class="absolute ancl-stat  mt-2 left-[7rem] lg:left-[26rem]">
                         <img class="w-[100px] lg:w-[350px]" src="./asset/image/Vector-4.png" alt="">
                     </div>
-                    <div class="absolute mt-2 right-[7rem] lg:right-[26rem]">
+                    <div class="absolute mt-2 ancl-stat right-[7rem] lg:right-[26rem]">
                         <img class="w-[100px] lg:w-[350px]" src="./asset/image/Vector-5.png" alt="">
                     </div>
                 </div>
@@ -176,24 +177,24 @@
     </section>
 
     <!-- mobile -->
-    <section class="muc pt-20 w-full h-full relative lg:hidden " id="wdc">
+    <section class="muc pt-20 pb-20 w-full h-full relative lg:hidden " id="wdc">
         <div class="h-full w-full flex flex-col justify-center items-center">
             <div class="px-20 pb-10 mt-20 mx-auto">
-                <img class="w-auto" src="./asset/image/MUC.png" alt="">
+                <img class="w-auto rotate-right" src="./asset/image/MUC.png" alt="">
             </div>
-            <h1 class="text-8xl text-textmuc-0 font-jersey">MUC</h1>
-            <p class="text-3xl text-center text-textmuc-0 font-khdam">Mobile UI/UX Competition</p>
+            <h1 class="text-8xl reveal text-textmuc font-jersey">MUC</h1>
+            <p class="text-3xl text-center reveal text-textmuc font-khdam">Mobile UI/UX Competition</p>
 
-            <div class="flex flex-row px-1 mt-5 mb-5">
-                <button class="text-[0.8rem] px-2 py-2 rounded-full bg-btnmuc-0 text-white font-inter">SMA /
+            <div class="flex reveal flex-row px-1 mt-5 mb-5">
+                <button class="text-[0.8rem] px-2 py-2 rounded-full bg-btnmuc text-white font-inter">SMA /
                     Sederajat</button>
-                <button class="text-[0.8rem] ml-2 mr-1 px-3 py-2 rounded-full bg-btnmuc-0 text-white font-inter">Max.
+                <button class="text-[0.8rem] ml-2 mr-1 px-3 py-2 rounded-full bg-btnmuc text-white font-inter">Max.
                     3 orang</button>
                 <button
-                    class="text-[0.8rem] px-4 py-2 rounded-full bg-btnmuc-0 text-white font-inter">Rp.100.000,00</button>
+                    class="text-[0.8rem] px-4 py-2 rounded-full bg-btnmuc text-white font-inter">Rp.100.000,00</button>
             </div>
 
-            <p class="text-base text-black mt-4 px-12 font-inter text-justify">
+            <p class="text-base reveal text-black mt-4 px-12 font-inter text-justify">
                 Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
                 membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
                 jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
@@ -201,39 +202,39 @@
                 lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
                 merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
             </p>
-            <div class="mt-6 flex flex-row space-x-4">
+            <div class="mt-6 reveal flex flex-row space-x-4">
                 <button
-                    class="bg-transparent border-4  border-btnmuc-0 rounded-full text-btnmuc-0 px-4 py-2  hover:bg-btnmuc-0 hover:text-white">
+                    class="bg-transparent border-4  border-btnmuc-0 rounded-full text-btnmuc px-4 py-2  hover:bg-btnmuc hover:text-white">
                     View all +
                 </button>
-                <button class="bg-btnmuc-0 text-white px-10 py-3 rounded-full hover:bg-white hover:text-textmuc-0">
+                <button class="bg-btnmuc text-white px-10 py-3 rounded-full hover:bg-white hover:text-textmuc">
                     Daftar >
                 </button>
             </div>
         </div>
     </section>
 
-    <section class="wdc w-full h-full relative lg:hidden pt-20 " id="wdc">
-        <div class="w-full h-full flex flex-col items-center justify-center">
+    <section class="wdc w-full h-full relative lg:hidden pt-20 pb-20 " id="wdc">
+        <div class="w-full reveal h-full flex flex-col items-center justify-center">
 
-            <div class="mt-20 pb-10 mb-10 px-20 ">
+            <div class="mt-20 rotate-right pb-10 mb-10 px-20 ">
                 <img class="mx-auto w-auto" src="./asset/image/WDC.png" alt="">
             </div>
 
-            <h1 class="text-8xl text-wdctxt-0 font-jersey">WDC</h1>
+            <h1 class="text-8xl reveal text-wdctxt font-jersey">WDC</h1>
 
-            <p class="text-3xl text-wdctxt-0 text-center font-khdam">Web Development Competition</p>
+            <p class="text-3xl  reveal text-wdctxt text-center font-khdam">Web Development Competition</p>
 
-            <div class="flex flex-row mt-5 mb-5">
-                <button class="text-[0.8rem] px-3 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">SMA /
+            <div class="flex reveal flex-row mt-5 mb-5">
+                <button class="text-[0.8rem] px-3 py-2 rounded-full bg-wdcbtn text-white font-inter">SMA /
                     Sederajat</button>
-                <button class="text-[0.8rem] ml-2 mr-2 px-3 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">Max.
+                <button class="text-[0.8rem] ml-2 mr-2 px-3 py-2 rounded-full bg-wdcbtn text-white font-inter">Max.
                     3 orang</button>
                 <button
-                    class="text-[0.8rem] px-3 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">Rp.100.000,00</button>
+                    class="text-[0.8rem] px-3 py-2 rounded-full bg-wdcbtn text-white font-inter">Rp.100.000,00</button>
             </div>
 
-            <p class="text-base text-black mt-4 px-12 font-inter text-justify">
+            <p class="text-base reveal text-black mt-4 px-12 font-inter text-justify">
                 Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
                 membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
                 jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
@@ -242,35 +243,35 @@
                 merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
             </p>
 
-            <div class="mt-6 flex flex-row space-x-4">
+            <div class="mt-6 reveal flex flex-row space-x-4">
                 <button
-                    class="bg-transparent border-4  border-wdcbtn-0 rounded-full text-wdctxt-0 px-4 py-2  hover:bg-wdcbtn-0 hover:text-white">
+                    class="bg-transparent border-4  border-wdcbtn rounded-full text-wdctxt px-4 py-2  hover:bg-wdcbtn hover:text-white">
                     View all +
                 </button>
-                <button class="bg-wdcbtn-0 text-white px-10 py-3 rounded-full hover:bg-white hover:text-wdcbtn-0">
+                <button class="bg-wdcbtn text-white px-10 py-3 rounded-full hover:bg-white hover:text-wdcbtn">
                     Daftar >
                 </button>
             </div>
         </div>
     </section>
 
-    <section class="ctf w-full relative lg:hidden h-full">
-        <div class="w-full h-full flex flex-col pt-20 pb-10 justify-center items-center">
+    <section class="ctf w-full pt-10 pb-20 relative lg:hidden h-full">
+        <div class="w-full reveal h-full flex flex-col pt-20 pb-10 justify-center items-center">
             <div class="px-20 pb-10 mt-20 ">
-                <img class="mx-auto w-auto" src="./asset/image/CTF.png" alt="">
+                <img class="mx-auto rotate-right w-auto" src="./asset/image/CTF.png" alt="">
             </div>
 
-            <h1 class="text-8xl text-ctftxt-0 font-jersey">CTF</h1>
-            <p class="text-3xl text-ctftxt-0 font-khdam">Capture The Flag</p>
-            <div class="flex flex-row mt-5 mb-5">
-                <button class="text-[0.8rem] px-3 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">SMA /
+            <h1 class="text-8xl reveal text-ctftxt font-jersey">CTF</h1>
+            <p class="text-3xl reveal text-ctftxt font-khdam">Capture The Flag</p>
+            <div class="flex reveal flex-row mt-5 mb-5">
+                <button class="text-[0.8rem] px-3 py-2 rounded-full bg-ctfbtn text-white font-inter">SMA /
                     Sederajat</button>
-                <button class="text-[0.8rem] ml-2 mr-2 px-3 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">Max.
+                <button class="text-[0.8rem] ml-2 mr-2 px-3 py-2 rounded-full bg-ctfbtn text-white font-inter">Max.
                     3 orang</button>
                 <button
-                    class="text-[0.8rem] px-3 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">Rp.100.000,00</button>
+                    class="text-[0.8rem] px-3 py-2 rounded-full bg-ctfbtn text-white font-inter">Rp.100.000,00</button>
             </div>
-            <p class="text-base text-black mt-4 px-12 font-inter text-justify">
+            <p class="text-base reveal text-black mt-4 px-12 font-inter text-justify">
                 Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
                 membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
                 jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
@@ -278,34 +279,34 @@
                 lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
                 merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
             </p>
-            <div class="mt-6 flex flex-row space-x-4">
+            <div class="mt-6 reveal flex flex-row space-x-4">
                 <button
-                    class="bg-transparent border-4  border-ctfbtn-0 rounded-full text-ctftxt-0 px-4 py-2  hover:bg-ctfbtn-0 hover:text-white">
+                    class="bg-transparent border-4  border-ctfbtn rounded-full text-ctftxt px-4 py-2  hover:bg-ctfbtn hover:text-white">
                     View all +
                 </button>
-                <button class="bg-ctfbtn-0 text-white px-10 py-3 rounded-full hover:bg-white hover:text-ctfbtn-0">
+                <button class="bg-ctfbtn text-white px-10 py-3 rounded-full hover:bg-white hover:text-ctfbtn">
                     Daftar >
                 </button>
             </div>
         </div>
     </section>
 
-    <section class="semnas w-full h-full relative lg:hidden">
-        <div class="flex flex-col pt-20 pb-10 justify-center items-center">
+    <section class="semnas pt-10 pb-20 w-full h-full relative lg:hidden">
+        <div class="flex reveal flex-col pt-20 pb-10 justify-center items-center">
             <div class="px-20 pb-10 mt-20 ">
-                <img class="mx-auto w-auto" src="./asset/image/SEMNAS.png" alt="">
+                <img class="mx-auto rotate-right w-auto" src="./asset/image/SEMNAS.png" alt="">
             </div>
-            <h1 class="text-8xl text-semnascl-0  font-jersey">SEMNAS</h1>
-            <p class="text-3xl text-semnascl-0   font-khdam">Seminar Nasional</p>
-            <div class="flex-row flex mt-5 mb-5">
-                <button class="text-[0.8rem] px-3 py-2 rounded-full bg-semnascl-0 text-white font-inter">SMA /
+            <h1 class="text-8xl text-semnascl reveal  font-jersey">SEMNAS</h1>
+            <p class="text-3xl text-semnascl reveal   font-khdam">Seminar Nasional</p>
+            <div class="flex-row reveal flex mt-5 mb-5">
+                <button class="text-[0.8rem] px-3 py-2 rounded-full bg-semnascl text-white font-inter">SMA /
                     Sederajat</button>
-                <button class="text-[0.8rem] ml-2 mr-2 px-3 py-2 rounded-full bg-semnascl-0 text-white font-inter">Max.
+                <button class="text-[0.8rem] ml-2 mr-2 px-3 py-2 rounded-full bg-semnascl text-white font-inter">Max.
                     3 orang</button>
                 <button
-                    class="text-[0.8rem] px-3 py-2 rounded-full bg-semnascl-0 text-white font-inter">Rp.100.000,00</button>
+                    class="text-[0.8rem] px-3 py-2 rounded-full bg-semnascl text-white font-inter">Rp.100.000,00</button>
             </div>
-            <p class="text-base text-black px-12 mt-4 font-inter text-justify">
+            <p class="text-base reveal text-black px-12 mt-4 font-inter text-justify">
                 Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
                 membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
                 jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
@@ -313,12 +314,12 @@
                 lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
                 merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
             </p>
-            <div class="mt-6 flex flex-row space-x-4">
+            <div class="mt-6 reveal flex flex-row space-x-4">
                 <button
-                    class="bg-transparent border-4  border-semnascl-0 rounded-full text-semnascl-0 px-4 py-2  hover:bg-semnascl-0 hover:text-white">
+                    class="bg-transparent border-4  border-semnascl rounded-full text-semnascl px-4 py-2  hover:bg-semnascl hover:text-white">
                     View all +
                 </button>
-                <button class="bg-semnascl-0 text-white px-10 py-3 rounded-full hover:bg-white hover:text-semnascl-0">
+                <button class="bg-semnascl text-white px-10 py-3 rounded-full hover:bg-white hover:text-semnascl">
                     Daftar >
                 </button>
             </div>
@@ -327,26 +328,26 @@
 
     <!-- desktop -->
 
-    <section class="w-full h-full py-20 muc hidden lg:block">
-        <div class="w-full h-full flex flex-row">
+    <section class="w-full h-full py-20 pb-20 muc hidden lg:block">
+        <div class="w-full h-full reveal flex flex-row">
             <!-- Bagian Kiri -->
-            <div class="pl-20 pr-12 mt-20 mx-auto">
-                <img class="w-auto" src="./asset/image/MUC.png" alt="">
+            <div class="pl-32 pr-20 mt-20">
+                <img class="w-auto rotate-right" src="./asset/image/MUC.png" alt="">
             </div>
 
             <!-- Bagian Kanan -->
             <div class="w-1/2 ml-10">
-                <h1 class="text-8xl text-textmuc-0 font-jersey">MUC</h1>
-                <p class="text-3xl text-textmuc-0 font-khdam">Mobile UI/UX Competition</p>
-                <div class="row mt-5 mb-5">
-                    <button class="text-1xl px-5 py-2 rounded-full bg-btnmuc-0 text-white font-inter">SMA /
+                <h1 class="text-8xl reveal text-textmuc font-jersey">MUC</h1>
+                <p class="text-3xl reveal text-textmuc font-khdam">Mobile UI/UX Competition</p>
+                <div class="row reveal mt-5 mb-5">
+                    <button class="text-1xl px-5 py-2 rounded-full bg-btnmuc text-white font-inter">SMA /
                         Sederajat</button>
-                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-btnmuc-0 text-white font-inter">Max.
+                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-btnmuc text-white font-inter">Max.
                         3 orang</button>
                     <button
-                        class="text-1xl px-4 py-2 rounded-full bg-btnmuc-0 text-white font-inter">Rp.100.000,00</button>
+                        class="text-1xl px-4 py-2 rounded-full bg-btnmuc text-white font-inter">Rp.100.000,00</button>
                 </div>
-                <p class="text-lg text-black mt-4 pr-32 font-inter text-justify">
+                <p class="reveal text-lg text-black mt-4 pr-32 font-inter text-justify">
                     Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
                     membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
                     jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
@@ -354,12 +355,12 @@
                     lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
                     merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
                 </p>
-                <div class="mt-6 space-x-4">
+                <div class="mt-6 space-x-4 reveal">
                     <button
-                        class="bg-transparent border-4  border-btnmuc-0 rounded-full text-btnmuc-0 px-10 py-2  hover:bg-btnmuc-0 hover:text-white">
+                        class="bg-transparent border-4  border-btnmuc rounded-full text-btnmuc px-10 py-2  hover:bg-btnmuc hover:text-white">
                         View all +
                     </button>
-                    <button class="bg-btnmuc-0 text-white px-16 py-3 rounded-full hover:bg-white hover:text-textmuc-0">
+                    <button class="bg-btnmuc text-white px-16 py-3 rounded-full hover:bg-white hover:text-textmuc">
                         Daftar >
                     </button>
                 </div>
@@ -369,21 +370,21 @@
 
 
 
-    <section class="w-full py-20 hidden lg:block h-full wdc">
-        <div class="flex flex-row">
+    <section class="w-full pt-20 pb-20 hidden lg:block h-full wdc">
+        <div class="flex flex-row reveal">
             <!-- Bagian Kiri -->
             <div class="w-1/2 ml-24">
-                <h1 class="text-8xl text-wdctxt-0 font-jersey">WDC</h1>
-                <p class="text-3xl text-wdctxt-0 font-khdam">Web Development Competition</p>
-                <div class="row mt-5 mb-5">
-                    <button class="text-1xl px-5 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">SMA /
+                <h1 class="text-8xl reveal text-wdctxt font-jersey">WDC</h1>
+                <p class="text-3xl reveal text-wdctxt font-khdam">Web Development Competition</p>
+                <div class="row reveal mt-5 mb-5">
+                    <button class="text-1xl px-5 py-2 rounded-full bg-wdcbtn text-white font-inter">SMA /
                         Sederajat</button>
-                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">Max.
+                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-wdcbtn text-white font-inter">Max.
                         3 orang</button>
                     <button
-                        class="text-1xl px-4 py-2 rounded-full bg-wdcbtn-0 text-white font-inter">Rp.100.000,00</button>
+                        class="text-1xl px-4 py-2 rounded-full bg-wdcbtn text-white font-inter">Rp.100.000,00</button>
                 </div>
-                <p class="text-lg text-black mt-4 pr-32 font-inter text-justify">
+                <p class="text-lg reveal text-black mt-4 pr-32 font-inter text-justify">
                     Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
                     membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
                     jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
@@ -391,42 +392,42 @@
                     lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
                     merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
                 </p>
-                <div class="mt-6 space-x-4">
+                <div class="mt-6 reveal space-x-4">
                     <button
-                        class="bg-transparent border-4  border-wdcbtn-0 rounded-full text-wdctxt-0 px-10 py-2  hover:bg-wdcbtn-0 hover:text-white">
+                        class="bg-transparent border-4  border-wdcbtn rounded-full text-wdctxt px-10 py-2  hover:bg-wdcbtn hover:text-white">
                         View all +
                     </button>
-                    <button class="bg-wdcbtn-0 text-white px-16 py-3 rounded-full hover:bg-white hover:text-wdcbtn-0">
+                    <button class="bg-wdcbtn text-white px-16 py-3 rounded-full hover:bg-white hover:text-wdcbtn">
                         Daftar >
                     </button>
                 </div>
             </div>
-            <div class="pl-20 mt-20 ">
-                <img class="mx-auto w-auto" src="./asset/image/WDC.png" alt="">
+            <div class="pl-10 mt-20 pr-32 ">
+                <img class="mx-auto rotate-left w-auto" src="./asset/image/WDC.png" alt="">
             </div>
 
         </div>
     </section>
 
-    <section class="w-full h-full hidden lg:block py-20 ctf">
-        <div class="flex flex-row">
+    <section class="w-full h-full hidden lg:block pt-20 pb-20 ctf">
+        <div class="flex flex-row reveal">
             <!-- Kanan -->
-            <div class="pl-20 mt-20 ">
-                <img class="mx-auto w-auto" src="./asset/image/CTF.png" alt="">
+            <div class="pl-30 pr-20 mt-20 ">
+                <img class="rotate-right mx-auto w-auto" src="./asset/image/CTF.png" alt="">
             </div>
             <!-- Bagian Kiri -->
             <div class="w-1/2 ml-24">
-                <h1 class="text-8xl text-ctftxt-0 font-jersey">CTF</h1>
-                <p class="text-3xl text-ctftxt-0 font-khdam">Capture The Flag</p>
-                <div class="row mt-5 mb-5">
-                    <button class="text-1xl px-5 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">SMA /
+                <h1 class="text-8xl reveal text-ctftxt font-jersey">CTF</h1>
+                <p class="text-3xl reveal text-ctftxt font-khdam">Capture The Flag</p>
+                <div class="row reveal mt-5 mb-5">
+                    <button class="text-1xl px-5 py-2 rounded-full bg-ctfbtn text-white font-inter">SMA /
                         Sederajat</button>
-                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">Max.
+                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-ctfbtn text-white font-inter">Max.
                         3 orang</button>
                     <button
-                        class="text-1xl px-4 py-2 rounded-full bg-ctfbtn-0 text-white font-inter">Rp.100.000,00</button>
+                        class="text-1xl px-4 py-2 rounded-full bg-ctfbtn text-white font-inter">Rp.100.000,00</button>
                 </div>
-                <p class="text-lg text-black mt-4 pr-32 font-inter text-justify">
+                <p class="text-lg reveal text-black mt-4 pr-32 font-inter text-justify">
                     Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
                     membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
                     jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
@@ -434,12 +435,12 @@
                     lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
                     merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
                 </p>
-                <div class="mt-6 space-x-4">
+                <div class="mt-6 space-x-4 reveal">
                     <button
-                        class="bg-transparent border-4  border-ctfbtn-0 rounded-full text-ctftxt-0 px-10 py-2  hover:bg-ctfbtn-0 hover:text-white">
+                        class="bg-transparent border-4  border-ctfbtn rounded-full text-ctftxt px-10 py-2  hover:bg-ctfbtn hover:text-white">
                         View all +
                     </button>
-                    <button class="bg-ctfbtn-0 text-white px-16 py-3 rounded-full hover:bg-white hover:text-ctfbtn-0">
+                    <button class="bg-ctfbtn text-white px-16 py-3 rounded-full hover:bg-white hover:text-ctfbtn">
                         Daftar >
                     </button>
                 </div>
@@ -447,21 +448,21 @@
         </div>
     </section>
 
-    <section class="semnas w-full hidden lg:block h-full py-20">
+    <section class="semnas w-full hidden lg:block h-full pt-20 pb-20">
         <div class="flex flex-row">
             <!-- Bagian Kiri -->
             <div class="w-1/2 ml-24">
-                <h1 class="text-8xl text-semnascl-0  font-jersey">SEMNAS</h1>
-                <p class="text-3xl text-semnascl-0   font-khdam">Seminar Nasional</p>
-                <div class="row mt-5 mb-5">
-                    <button class="text-1xl px-5 py-2 rounded-full bg-semnascl-0 text-white font-inter">SMA /
+                <h1 class="text-8xl reveal text-semnascl  font-jersey">SEMNAS</h1>
+                <p class="text-3xl reveal text-semnascl  font-khdam">Seminar Nasional</p>
+                <div class="row reveal mt-5 mb-5">
+                    <button class="text-1xl px-5 py-2 rounded-full bg-semnascl text-white font-inter">SMA /
                         Sederajat</button>
-                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-semnascl-0 text-white font-inter">Max.
+                    <button class="text-1xl ml-2 mr-2 px-4 py-2 rounded-full bg-semnascl text-white font-inter">Max.
                         3 orang</button>
                     <button
-                        class="text-1xl px-4 py-2 rounded-full bg-semnascl-0 text-white font-inter">Rp.100.000,00</button>
+                        class="text-1xl px-4 py-2 rounded-full bg-semnascl text-white font-inter">Rp.100.000,00</button>
                 </div>
-                <p class="text-lg text-black mt-4 pr-32 font-inter text-justify">
+                <p class="text-lg reveal text-black mt-4 pr-32 font-inter text-justify">
                     Dengan tema "A Bridge to Enhance Our Cultural Knowledge" dan subtema “Educating”, I2C tahun ini
                     membawa perpaduan unik antara perkembangan teknologi dan fokus pada keberagaman budaya. Sebagai
                     jembatan, acara ini bertujuan untuk menjembatani kesenjangan antara perkembangan teknologi dan
@@ -469,74 +470,74 @@
                     lebih mendalam terhadap budaya, masyarakat dapat lebih bijak dan bertanggung jawab dalam
                     merancang, mengembangkan, dan menggunakan teknologi untuk kebaikan bersama.
                 </p>
-                <div class="mt-6 space-x-4">
+                <div class="mt-6 space-x-4 reveal">
                     <button
-                        class="bg-transparent border-4  border-semnascl-0 rounded-full text-semnascl-0 px-10 py-2  hover:bg-semnascl-0 hover:text-white">
+                        class="bg-transparent border-4  border-semnascl rounded-full text-semnascl px-10 py-2  hover:bg-semnascl hover:text-white">
                         View all +
                     </button>
                     <button
-                        class="bg-semnascl-0 text-white px-16 py-3 rounded-full hover:bg-white hover:text-semnascl-0">
+                        class="bg-semnascl text-white px-16 py-3 rounded-full hover:bg-white hover:text-semnascl">
                         Daftar >
                     </button>
                 </div>
             </div>
-            <div class="pl-20 mt-20 ">
-                <img class="mx-auto w-auto" src="./asset/image/SEMNAS.png" alt="">
+            <div class="pl-20 pr-32  mt-20 ">
+                <img class="mx-auto rotate-left w-auto" src="./asset/image/SEMNAS.png" alt="">
             </div>
         </div>
     </section>
 
     <section class="sponsor media" id="sponsor">
-        <div class="container medspo">
+        <div class="container reveal medspo">
             <div class="heading-sp text-center pt-14">
-                <p class="text-md mb-8 font-khdam text-sponcl-0">I FEST#13: HEROES OF INNOVATION</p>
-                <div class="flex flex-row justify-center items-center mx-10">
-                    <div class="w-12 lg:w-20 mb-12">
+                <p class="text-md reveal mb-8 font-khdam text-sponcl">I FEST#13: HEROES OF INNOVATION</p>
+                <div class="flex flex-row reveal justify-center items-center mx-10">
+                    <div class="w-12 reveal lg:w-20 mb-12">
                         <img class="" src="./asset/image/bling.svg" alt="">
                     </div>
 
-                    <h1 class="text-6xl lg:text-7xl mb-4 font-jersey text-sponcl-0 ">SPONSORS</h1>
+                    <h1 class="text-6xl lg:text-7xl mb-4 font-jersey text-sponcl reveal ">SPONSORS</h1>
                     <div class="w-12 lg:w-20 mb-12">
-                        <img class="" src="./asset/image/bling.svg" alt="">
+                        <img class="reveal" src="./asset/image/bling.svg" alt="">
                     </div>
 
                 </div>
 
-                <p class="text-md font-khdam text-sponcl-0 ">With the precious support of our partners</p>
+                <p class="text-md font-khdam text-sponcl reveal">With the precious support of our partners</p>
             </div>
-            <div class="flex flex-col justify-center">
+            <div class="flex flex-col reveal justify-center">
                 <div class="flex flex-wrap justify-center mt-10">
 
                     <!-- card 1 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
 
                     <!-- card 2 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
 
                     <!-- card 3 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
                     <!-- card 4 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
 
                     <!-- card 5 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
@@ -545,58 +546,58 @@
                 <!-- sponsor end -->
 
                 <!-- media -->
-                <div class="heading-sp text-center pt-14">
-                    <div class="flex flex-row justify-center items-center mx-10">
-                        <div class="w-10 lg:w-20 mb-12">
+                <div class="heading-sp reveal text-center pt-14">
+                    <div class="flex reveal flex-row justify-center items-center mx-10">
+                        <div class="w-10 reveal lg:w-20 mb-12">
                             <img class="" src="./asset/image/bling.svg" alt="">
                         </div>
-                        <h1 class="text-6xl lg:text-7xl mb-4 font-jersey text-sponcl-0 ">MEDIA PARTNER</h1>
-                        <div class="w-10 lg:w-20 mb-12">
+                        <h1 class="text-6xl reveal lg:text-7xl mb-4 font-jersey text-sponcl ">MEDIA PARTNER</h1>
+                        <div class="w-10 reveal lg:w-20 mb-12">
                             <img class="" src="./asset/image/bling.svg" alt="">
                         </div>
                     </div>
 
                 </div>
 
-                <div class="flex flex-wrap items-center justify-center mt-10">
+                <div class="flex reveal flex-wrap items-center justify-center mt-10">
 
                     <!-- card 1 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
 
                     <!-- card 2 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
 
                     <!-- card 3 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
                     <!-- card 4 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
 
                     <!-- card 5 -->
                     <div class="p-1 max-w-sm">
-                        <div class="flex  h-auto  bg-sponbg-0 px-16 py-5 flex-col">
+                        <div class="flex  h-auto  bg-sponbg px-16 py-5 flex-col">
                             <img class="w-40" src="./asset/image/sponsor.png" alt="">
                         </div>
                     </div>
 
                 </div>
-                <div class="flex justify-center items-center pt-5 mt-5 pb-10">
-                    <button class="rounded-full py-4 px-12 text-white bg-spbtn-0">Become our support ></button>
+                <div class="flex reveal justify-center items-center pt-5 mt-5 pb-10">
+                    <button class="rounded-full py-4 px-12 text-white bg-spbtn">Become our support ></button>
                 </div>
             </div>
         </div>
@@ -604,26 +605,26 @@
     </section>
 
     <!-- FAQ MOBILE -->
-    <section class="faq w-full h-full lg:hidden">
-        <div class="flex flex-col justify-center items-center">
+    <section class="faq pt-10 pb-20 w-full h-full lg:hidden">
+        <div class="flex reveal flex-col justify-center items-center">
             <div class="heading-sp text-center pt-14 mb-10">
-                <p class="text-sm mb-4 font-khdam text-sponcl-0">I FEST#13: HEROES OF INNOVATION</p>
+                <p class="reveal text-sm mb-4 font-khdam text-sponcl">I FEST#13: HEROES OF INNOVATION</p>
                 <div class="flex flex-row justify-center items-center mx-10">
                     <div class="mb-12 w-10">
-                        <img class="" src="./asset/image/bling.svg" alt="">
+                        <img class="reveal" src="./asset/image/bling.svg" alt="">
                     </div>
 
-                    <h1 class="text-3xl mb-4 font-jersey text-sponcl-0 ">FREQUENTLY ASKED QUESTION</h1>
+                    <h1 class="reveal text-3xl mb-4 font-jersey text-sponcl ">FREQUENTLY ASKED QUESTION</h1>
                     <div class="mb-12 w-10">
-                        <img class="" src="./asset/image/bling.svg" alt="">
+                        <img class="reveal" src="./asset/image/bling.svg" alt="">
                     </div>
                 </div>
-                <p class="text-sm px-12 font-khdam text-sponcl-0 ">Here are some common question about IFEST #13</p>
+                <p class="text-sm reveal px-12 font-khdam text-sponcl-0 ">Here are some common question about IFEST #13</p>
             </div>
 
-            <div class="flex justify-center flex-col items-center py-2 px-3">
+            <div class="flex reveal justify-center flex-col items-center py-2 px-3">
                 <button onclick="toggleAccordion(1)"
-                    class="w-full  border-l-white mx-10 border-l-12 z-10 bg-faqbg-0 rounded-xl px-2 py-2 text-white">
+                    class="w-full  border-l-white mx-10 border-l-12 z-10 bg-faqbg rounded-xl px-2 py-2 text-white">
                     <p class="text-left text-[0.7rem] font-bold"> Bagaimana cara saya bisa menjadi peserta atau peserta
                         dari SEMNAS
                         di IFEST #12?</p>
@@ -640,9 +641,9 @@
 
             </div>
 
-            <div class="flex justify-center flex-col items-center py-2 px-3">
+            <div class="flex reveal justify-center flex-col items-center py-2 px-3">
                 <button onclick="toggleAccordion(2)"
-                    class="w-full  border-l-white mx-10 border-l-12 z-10 bg-faqbg-0 rounded-xl px-2 py-2 text-white">
+                    class="w-full  border-l-white mx-10 border-l-12 z-10 bg-faqbg rounded-xl px-2 py-2 text-white">
                     <p class="text-left text-[0.7rem] font-bold">Apakah ada hadiah menarik untuk para pemenang kompetisi
                         di IFEST #12?</p>
 
@@ -660,9 +661,9 @@
 
             </div>
 
-            <div class="flex justify-center flex-col items-center py-2 px-3">
+            <div class="flex reveal justify-center flex-col items-center py-2 px-3">
                 <button onclick="toggleAccordion(3)"
-                    class="w-full border-l-white mx-10 border-l-12 z-10 bg-faqbg-0 rounded-xl px-2 py-2 text-white">
+                    class="w-full border-l-white mx-10 relative border-l-12 z-10 bg-faqbg rounded-xl px-2 py-2 text-white">
                     <p class="text-left text-[0.7rem] font-bold">Bagaimana jadwal acara IFEST #12?</p>
 
                 </button>
@@ -677,9 +678,9 @@
 
             </div>
 
-            <div class="flex justify-center flex-col items-center py-2 px-3">
+            <div class="flex reveal justify-center flex-col items-center py-2 px-3">
                 <button onclick="toggleAccordion(4)"
-                    class="w-full  border-l-white mx-10 border-l-12 z-10 bg-faqbg-0 rounded-xl px-2 py-2 text-white">
+                    class="w-full  border-l-white mx-10 border-l-12 z-10 bg-faqbg rounded-xl px-2 py-2 text-white">
                     <p class="text-left text-[0.7rem] font-bold">Bagaimana saya bisa berkontribusi sebagai sponsor atau
                         relawan untuk IFEST #12?</p>
 
@@ -695,7 +696,10 @@
 
             </div>
 
-
+            <div class="flex reveal flex-col justify-center items-center pt-5 mt-10 pb-10">
+                <p class="text-sponcl font-khdam mb-5">Still Have any Question ?</p>
+                <button class="rounded-full py-4 px-12 text-white bg-spbtn">Contact Us></button>
+            </div>
 
         </div>
     </section>
@@ -703,28 +707,28 @@
 
     <!-- FAQ DESKTOP -->
     <section class="faq w-full h-full hidden lg:block" id="faq">
-        <div class=" flex flex-col justify-center items-center">
-            <div class="heading-sp text-center pt-14 mb-10">
-                <p class="text-md mb-4 font-khdam text-sponcl-0">I FEST#13: HEROES OF INNOVATION</p>
-                <div class="flex flex-row justify-center items-center">
+        <div class=" reveal flex flex-col justify-center items-center">
+            <div class="heading-sp reveal text-center pt-14 mb-10">
+                <p class="text-md mb-4 font-khdam text-sponcl">I FEST#13: HEROES OF INNOVATION</p>
+                <div class="flex reveal flex-row justify-center items-center">
                     <div class="mb-12">
-                        <img class="" src="./asset/image/bling.svg" alt="">
+                        <img class="reveal" src="./asset/image/bling.svg" alt="">
                     </div>
 
-                    <h1 class="text-7xl mb-4 font-jersey text-sponcl-0 ">FREQUENTLY ASKED QUESTION</h1>
+                    <h1 class="text-7xl mb-4 font-jersey text-sponcl reveal ">FREQUENTLY ASKED QUESTION</h1>
                     <div class="mb-12">
-                        <img class="" src="./asset/image/bling.svg" alt="">
+                        <img class="reveal" src="./asset/image/bling.svg" alt="">
                     </div>
 
                 </div>
-                <p class="text-md font-khdam text-sponcl-0 ">Here are some common question about IFEST #13</p>
+                <p class="text-md reveal font-khdam text-sponcl ">Here are some common question about IFEST #13</p>
             </div>
 
             <!-- Accordion Item 1 -->
 
-            <div class="flex-col mb-5">
+            <div class="flex-col mb-5 reveal">
                 <button onclick="toggleAccordion(5)"
-                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg-0 rounded-xl pl-10 pr-5 py-5 text-white">
+                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg rounded-xl pl-10 pr-5 py-5 text-white">
                     <div class="btn-txt flex flex-row items-center">
                         <p class="text-left font-bold">Bagaimana cara saya bisa menjadi peserta atau peserta dari SEMNAS
                             di IFEST #12?</p>
@@ -745,9 +749,9 @@
             </div>
 
             <!-- Accordion Item 2 -->
-            <div class="flex-col mb-5">
+            <div class="flex-col mb-5 reveal">
                 <button onclick="toggleAccordion(6)"
-                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg-0 rounded-xl pl-10 pr-5 py-5 text-white">
+                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg rounded-xl pl-10 pr-5 py-5 text-white">
                     <div class="btn-txt flex flex-row items-center">
                         <p class="text-left font-bold">Apakah ada hadiah menarik untuk para pemenang kompetisi di IFEST
                             #12?</p>
@@ -772,9 +776,9 @@
             </div>
 
             <!-- Accordion Item 3 -->
-            <div class="flex-col mb-5">
+            <div class="flex-col mb-5 reveal">
                 <button onclick="toggleAccordion(7)"
-                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg-0 rounded-xl pl-10 pr-5 py-5 text-white">
+                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg rounded-xl pl-10 pr-5 py-5 text-white">
                     <div class="btn-txt flex flex-row items-center">
                         <p class="text-left font-bold">Bagaimana jadwal acara IFEST #12?</p>
                         <span id="icon-7" class="text-white pl-96 ml-72 transition-transform row-span-5 duration-300">
@@ -793,9 +797,9 @@
                 </div>
             </div>
             <!-- accordion item 4 -->
-            <div class="flex-col">
+            <div class="flex-col reveal">
                 <button onclick="toggleAccordion(8)"
-                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg-0 rounded-xl pl-10 pr-5 py-5 text-white">
+                    class="w-full border-l-white border-l-12 z-10 relative bg-faqbg rounded-xl pl-10 pr-5 py-5 text-white">
                     <div class="btn-txt flex flex-row items-center">
                         <p class="text-left font-bold">Bagaimana saya bisa berkontribusi sebagai sponsor atau relawan
                             untuk IFEST #12?</p>
@@ -814,9 +818,9 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col justify-center items-center pt-5 mt-10 pb-10">
-                <p class="text-sponcl-0 font-khdam mb-5">Still Have any Question ?</p>
-                <button class="rounded-full py-4 px-12 text-white bg-spbtn-0">Contact Us></button>
+            <div class="flex reveal flex-col justify-center items-center pt-5 mt-10 pb-10">
+                <p class="text-sponcl font-khdam mb-5">Still Have any Question ?</p>
+                <button class="rounded-full py-4 px-12 text-white bg-spbtn">Contact Us></button>
             </div>
         </div>
 
@@ -825,24 +829,24 @@
     </section>
 
     <section class="contact w-full h-full py-20">
-        <div class="flex flex-col h-full w-full justify-center items-center">
-            <p class="text-sm lg:text-md mb-4 font-khdam text-sponcl-0">I FEST#13: HEROES OF INNOVATION</p>
+        <div class="flex flex-col reveal h-full w-full justify-center items-center">
+            <p class="text-sm lg:text-md mb-4 font-khdam text-sponcl reveal">I FEST#13: HEROES OF INNOVATION</p>
             <div class="flex flex-row justify-center items-center mx-10">
                 <div class="w-10 lg:w-20 mb-12">
-                    <img class="" src="./asset/image/bling.svg" alt="">
+                    <img class="reveal" src="./asset/image/bling.svg" alt="">
                 </div>
 
-                <h1 class="text-4xl text-center lg:text-7xl mb-6 font-jersey text-sponcl-0 ">CONTACT PERSON</h1>
-                <div class="">
+                <h1 class="text-4xl text-center lg:text-7xl mb-6 font-jersey text-sponcl reveal ">CONTACT PERSON</h1>
+                <div class="reveal">
                     <img class="w-10 lg:w-20 mb-12" src="./asset/image/bling.svg" alt="">
                 </div>
 
             </div>
-            <p class="text-sm lg:text-lg px-8 lg:px-96 lg:text-center text-center font-khdam text-sponcl-0 ">Jika Anda
+            <p class="text-sm lg:text-lg px-8 lg:px-96 lg:text-center text-center font-khdam text-sponcl-0 reveal ">Jika Anda
                 memiliki pertanyaan lebih lanjut atau
                 membutuhkan bantuan
                 terkait IFEST #13, jangan ragu untuk menghubungi kami!</p>
-            <div class="hidden lg:block">
+            <div class="hidden lg:block reveal">
                 <div class="flex flex-row justify-center items-center">
                     <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
                         <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
@@ -1044,7 +1048,7 @@
            
                 <!-- mobile -->
 
-                <div class="lg:hidden">
+                <div class="lg:hidden reveal">
                     <div class="flex flex-col justify-center items-center">
                         <div class="relative z-10 flex justify-center mt-10 lg:mt-28 pb-10">
                             <div class="w-64 h-auto px-5 py-8 mx-5 rounded-2xl flex flex-col items-center justify-center fadeIn"
