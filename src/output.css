@@ -1411,19 +1411,9 @@
       outline-style: none;
     }
   }
-  .lg\:absolute {
-    @media (width >= 64rem) {
-      position: absolute;
-    }
-  }
   .lg\:fixed {
     @media (width >= 64rem) {
       position: fixed;
-    }
-  }
-  .lg\:sticky {
-    @media (width >= 64rem) {
-      position: sticky;
     }
   }
   .lg\:right-\[26rem\] {
@@ -1486,34 +1476,9 @@
       padding-block: 8rem;
     }
   }
-  .lg\:py-\[10rem\] {
-    @media (width >= 64rem) {
-      padding-block: 10rem;
-    }
-  }
-  .lg\:py-\[16rem\] {
-    @media (width >= 64rem) {
-      padding-block: 16rem;
-    }
-  }
-  .lg\:py-\[20rem\] {
-    @media (width >= 64rem) {
-      padding-block: 20rem;
-    }
-  }
   .lg\:pt-20 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 20);
-    }
-  }
-  .lg\:pb-20 {
-    @media (width >= 64rem) {
-      padding-bottom: calc(var(--spacing) * 20);
-    }
-  }
-  .lg\:pb-24 {
-    @media (width >= 64rem) {
-      padding-bottom: calc(var(--spacing) * 24);
     }
   }
   .lg\:pb-\[20rem\] {
