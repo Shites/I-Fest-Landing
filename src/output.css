@@ -577,6 +577,18 @@
   .left-\[7rem\] {
     left: 7rem;
   }
+  .-z-0 {
+    z-index: calc(0 * -1);
+  }
+  .-z-1 {
+    z-index: calc(1 * -1);
+  }
+  .-z-10 {
+    z-index: calc(10 * -1);
+  }
+  .-z-\[1\] {
+    z-index: calc(1 * -1);
+  }
   .z-0 {
     z-index: 0;
   }
@@ -586,8 +598,20 @@
   .z-20 {
     z-index: 20;
   }
+  .z-30 {
+    z-index: 30;
+  }
+  .z-40 {
+    z-index: 40;
+  }
   .z-50 {
     z-index: 50;
+  }
+  .z-\[10\] {
+    z-index: 10;
+  }
+  .z-\[1\] {
+    z-index: 1;
   }
   .row-span-5 {
     grid-row: span 5 / span 5;
@@ -1410,6 +1434,11 @@
   .lg\:left-\[26rem\] {
     @media (width >= 64rem) {
       left: 26rem;
+    }
+  }
+  .lg\:z-20 {
+    @media (width >= 64rem) {
+      z-index: 20;
     }
   }
   .lg\:mt-28 {
